@@ -13,3 +13,4 @@ pip install -r requirements.txt
 cd src
 python3 dtk.py --input_csv ~/Documents/Portfolio.csv
 ```
+`koyfin.csv` is going to be created under `src`
