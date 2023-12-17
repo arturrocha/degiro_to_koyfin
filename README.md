@@ -1,5 +1,5 @@
 # degiro_to_koyfin
-Converts the csv from degiro to be able to be uploaded to koyfin [Model Portfolio[(https://www.koyfin.com/help/release-notes/v3-23-model-portfolios/).  
+Converts the csv from degiro to be able to be uploaded to koyfin [Model Portfolio](https://www.koyfin.com/help/release-notes/v3-23-model-portfolios/).  
 You can pass multiple portifolios, they are going to be added together.  
 
 
