@@ -9,8 +9,8 @@ def test_portfolio():
         amount=12,
         closing=8.31,
         local_value_currency="usd",
-        local_value=12*8.31,
-        value=12*8.31*0.96,
+        local_value=12 * 8.31,
+        value=12 * 8.31 * 0.96,
     )
     t2 = Ticker(
         product="t2",
@@ -18,8 +18,8 @@ def test_portfolio():
         amount=21,
         closing=81.76,
         local_value_currency="eur",
-        local_value=21*81.76,
-        value=21*81.76,
+        local_value=21 * 81.76,
+        value=21 * 81.76,
     )
     t3 = Ticker(
         product="t3",
@@ -27,8 +27,8 @@ def test_portfolio():
         amount=199,
         closing=18.12,
         local_value_currency="eur",
-        local_value=199*18.12,
-        value=199*18.12,
+        local_value=199 * 18.12,
+        value=199 * 18.12,
     )
     portfolio = Portfolio(tickers=[t1, t2, t3], currency="eur")
-    assert portfolio.currency_values == {}
+    assert portfolio.currency_values == {"eur": 5322.84, "usd": 99.72}

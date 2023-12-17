@@ -36,7 +36,7 @@ class Converter:
             for row in self._degiro_list_no_header_and_cash
         ]
 
-        tickers = []
+        tickers: List[Ticker] = []
         for ticker in tickers_with_duplicates:
             done = []
             if len(tickers) > 0:
